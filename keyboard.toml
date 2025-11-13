@@ -1,38 +1,41 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
+name = "FrogBoardL"
+product_name = "FrogNotReisL"
 vendor_id = 0x4c4b
-product_id = 0x4643
+product_id = 0x464c
 manufacturer = "haobo"
 chip = "rp2040"
-
+usb_enable = true
 [matrix]
 # Input and output pins are mandatory
-input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-output_pins = ["PIN_19", "PIN_20", "PIN_21"]
+output_pins = ["PIN_29", "PIN_28", "PIN_10", "PIN26"] 
+
+# Your Column Pins: GP15, GP14, GP12, GP13, GP27, GP11, GP6 (7 pins)
+input_pins = ["PIN_15", "PIN_14", "PIN_12", "PIN_13", "PIN_27", "PIN_11", "PIN_P6"]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
 # row2col = true
 
 [layout]
 rows = 4
-cols = 3
+cols = 7
 layers = 2
 keymap = [
+    # LAYER 0: Base Layer (Must have 4 rows x 7 columns)
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        ["KC_M01", "KC_Q", "KC_W", "KC_F", "KC_P", "KC_B", "KC_NO"],
+        ["KC_M02", "KC_A", "KC_R", "KC_S", "KC_T", "KC_G", "KC_NO"],
+        ["KC_M03", "KC_X", "KC_C", "KC_D", "KC_V", "KC_Z", "KC_M04"],
+        ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_COMM", "KC_SPC", "M0(1)"]
     ],
+    # LAYER 1: (Used for modifiers/function keys)
     [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
+        ["KC_ESC", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_NO"],
+        ["KC_TAB", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_NO"],
+        ["KC_LALT", "KC_LCTRL", "KC_LSFT", "KC_LGUI", "KC_ENT", "KC_DEL", "KC_BSPC"],
+        ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_UP", "KC_DOWN", "KC_LEFT"]
     ],
 ]
-
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
 # capslock.pin = "PB2"
