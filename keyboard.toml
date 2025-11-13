@@ -8,11 +8,12 @@ manufacturer = "haobo"
 chip = "rp2040"
 usb_enable = true
 [matrix]
-# Input and output pins are mandatory
-output_pins = ["PIN_29", "PIN_28", "PIN_10", "PIN26"] 
+output_pins = ["GP29", "GP28", "GP10", "GP26"] 
 
-# Your Column Pins: GP15, GP14, GP12, GP13, GP27, GP11, GP6 (7 pins)
-input_pins = ["PIN_15", "PIN_14", "PIN_12", "PIN_13", "PIN_27", "PIN_11", "PIN_P6"]
+# COLUMNS (7 pins - must match 'cols' in layout)
+# Your Col Pins: GP15, GP14, GP12, GP13, GP27, GP11, GP6
+# NOTE: I am correcting GPIO6 to GP6 and GPIO27 to GP27 for consistency.
+input_pins = ["GP15", "GP14", "GP12", "GP13", "GP27", "GP11", "GP6"]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
 # row2col = true
 
