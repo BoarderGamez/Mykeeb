@@ -8,7 +8,6 @@ manufacturer = "haobo"
 chip = "rp2040"
 usb_enable = true
 [matrix]
-[matrix]
 # The content of 'output_pins' must contain the 7 column pins (inputs)
 output_pins = ["PIN_15", "PIN_14", "PIN_12", "PIN_13", "PIN_27", "PIN_11", "PIN_6"] 
 
@@ -17,7 +16,7 @@ input_pins = ["PIN_29", "PIN_28", "PIN_10", "PIN_26"]
 
 [layout]
 rows = 4
-cols = 10
+cols = 7
 layers = 2
 keymap = [
     [
