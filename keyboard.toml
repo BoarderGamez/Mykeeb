@@ -8,17 +8,12 @@ manufacturer = "haobo"
 chip = "rp2040"
 usb_enable = true
 [matrix]
-# These are your **ROWS (4 pins)**, which the RMK macro is expecting as the **SECOND** argument in the function call.
-# The macro expects the output pins to be the input pins, and the input pins to be the output pins.
-# We swap the arrays here to make the compiler happy.
-# NEW: output_pins (Rows 4 pins) should contain the 7 column pin names.
+[matrix]
+# The content of 'output_pins' must contain the 7 column pins (inputs)
 output_pins = ["PIN_15", "PIN_14", "PIN_12", "PIN_13", "PIN_27", "PIN_11", "PIN_6"] 
 
-# These are your **COLUMNS (7 pins)**, which the RMK macro is expecting as the **FIRST** argument in the function call.
-# NEW: input_pins (Columns 7 pins) should contain the 4 row pin names.
+# The content of 'input_pins' must contain the 4 row pins (outputs)
 input_pins = ["PIN_29", "PIN_28", "PIN_10", "PIN_26"]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-# row2col = true
 
 [layout]
 rows = 4
