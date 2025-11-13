@@ -10,33 +10,33 @@
     "layouts": {
         "keymap": [
             [
-                // R0: C0 to C6
+                # R0: C0 to C6
                 "0,0", {"y": 0.25}, "0,1", {"y": 0.5}, "0,2", {"y": 0.75}, "0,3", {"y": 1.0}, "0,4",
                 {"r": -5, "rx": 5.5, "ry": 0.5}, "0,5", 
                 {"r": -10, "rx": 6.5, "ry": 0.5}, "0,6" 
             ],
             [
-                // R1: Staggered, starting lower
+                # R1: Staggered, starting lower
                 {"y": 0.25}, "1,0", {"y": 0.25}, "1,1", {"y": 0.5}, "1,2", {"y": 0.75}, "1,3", {"y": 1.0}, "1,4",
                 {"r": -5, "rx": 5.5, "ry": 1.5}, "1,5", 
                 {"r": -10, "rx": 6.5, "ry": 1.5}, "1,6" 
             ],
             [
-                // R2: Staggered, starting even lower
+                # R2: Staggered, starting even lower
                 {"y": 0.5}, "2,0", {"y": 0.25}, "2,1", {"y": 0.5}, "2,2", {"y": 0.75}, "2,3", {"y": 1.0}, "2,4",
                 {"r": -5, "rx": 5.5, "ry": 2.5}, "2,5", 
                 {"r": -10, "rx": 6.5, "ry": 2.5}, "2,6" 
             ],
             [
-                // R3: Bottom Row - Hiding keys and placing the 1.5u rotated thumb keys
-                // Base stagger (0.75u), then per-column stagger
+                # R3: Bottom Row - Hiding keys and placing the 1.5u rotated thumb keys
+                # Base stagger (0.75u), then per-column stagger
                 {"y": 0.75}, "3,0", {"y": 0.25}, "3,1", {"y": 0.5}, "3,2",
                 
-                // Hiding phantom keys (3,3) and (3,4) while maintaining matrix order
+                # Hiding phantom keys (3,3) and (3,4) while maintaining matrix order
                 {"w": 0, "h": 0}, "3,3", 
                 {"w": 0, "h": 0}, "3,4",
                 
-                // Thumb cluster keys (3,5 and 3,6): Shifted right by 2u (for C3/C4 gap), set to 1.5u width, and rotated 110 degrees
+                # Thumb cluster keys (3,5 and 3,6): Shifted right by 2u (for C3/C4 gap), set to 1.5u width, and rotated 110 degrees
                 {"x": 2.0, "w": 1.5, "r": 110, "rx": 5.5, "ry": 4.5}, "3,5", 
                 {"w": 1.5, "r": 110, "rx": 6.5, "ry": 4.5}, "3,6" 
             ]
