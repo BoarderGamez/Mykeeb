@@ -22,17 +22,17 @@ input_pins = ["PIN_29", "PIN_28", "PIN_10", "PIN_26"]
 
 [layout]
 rows = 4
-cols = 7
+cols = 10
 layers = 2
 keymap = [
-    # LAYER 0: Base Layer (Must have 4 rows x 7 columns)
     [
-        ["A", "B", "C", "D", "E", "F", "_"],
-        ["A", "B", "C", "D", "E", "F", "_"],
-        ["A", "B", "C", "D", "E", "F", "G"],
-        ["_", "_", "_", "_", "A", "B", "C"]
-    ]
+        ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+        ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+        ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+        ["_", "_", "R", "S", "T", "R", "S", "T", "_", "_"],
+    ],
 ]
+
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
 # capslock.pin = "PB2"
