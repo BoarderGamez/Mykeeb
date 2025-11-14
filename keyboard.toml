@@ -1,7 +1,7 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "NotReisBoardR"
-product_name = "NotReisBoardR"
+name = "NotReisBoardL"
+product_name = "NotReisBoardL"
 vendor_id = 0x4c4b
 product_id = 0x464c
 manufacturer = "Frog"
