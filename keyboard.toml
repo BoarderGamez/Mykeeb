@@ -17,7 +17,7 @@ input_pins = ["PIN_29", "PIN_28", "PIN_10", "PIN_26"]
 [layout]
 rows = 4
 cols = 7
-layers = 2
+layers = 10
 keymap = [
     # LAYER 0: Base Layer (Must have 4 rows x 7 columns)
     [
