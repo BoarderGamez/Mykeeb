@@ -4,7 +4,7 @@ name = "FrogBoardL"
 product_name = "FrogNotReisL"
 vendor_id = 0x4c4b
 product_id = 0x464c
-manufacturer = "haobo"
+manufacturer = "Frog"
 chip = "rp2040"
 usb_enable = true
 [matrix]
